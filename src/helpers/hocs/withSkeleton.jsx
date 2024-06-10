@@ -1,6 +1,6 @@
 import Sceleton from "../../components/Sceleton/Sceleton";
 
-export const withSkeleton = (Component, type, count) => {
+function withSkeleton(Component, type, count) {
     return function WithSkeleton(props) {
       const {loading, ...restProps} = props;
 
@@ -10,3 +10,5 @@ export const withSkeleton = (Component, type, count) => {
         return <Component {...restProps} />
     }
 }
+
+export default withSkeleton
