@@ -13,12 +13,20 @@
   background-size: 400% 400%;
   animation: pulse 1.2s ease-in-out infinite;
 }
-.list {
+.columnList {
  display: flex;
  flex-direction: column;
- width: 100%;
  gap: 14px;
 }
+.rowList {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ width: 100%;
+ gap: 12px;
+ box-sizing: border-box;
+}
+
+
 
 @keyframes pulse {
     0% {
