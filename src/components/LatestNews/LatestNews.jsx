@@ -1,10 +1,13 @@
+import { getLatestNews } from "../../api/apiNews"
 import BannersList from "../BannersList/BannersList"
 import styles from "./styles.module.css"
+import useFetch from "../../helpers/hooks/useFetch"
 
-const LatestNews = ({banners, loading}) => {
+const LatestNews = () => {
+	const { data, loading } = useFetch(getLatestNews)
 	return (
 		<section className={styles.section}>
-			 <BannersList banners={banners} loading={loading}/>
+			<BannersList banners={data && data.news} loading={loading} />
 		</section>
 	)
 }
