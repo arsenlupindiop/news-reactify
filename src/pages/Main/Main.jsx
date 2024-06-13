@@ -5,7 +5,7 @@ import { PAGE_SIZE } from '../../constants/constants'
 import useFetch from '../../helpers/hooks/useFetch'
 import useFilters from '../../helpers/hooks/useFilters.js'
 import NewsByFilters from '../../components/NewsByFilters/NewsByFilters'
-import LatestNews from '/Users/nikitabugaev/Desktop/news-project/news-viteReact/src/components/LatestNews/LatestNews.jsx'
+import LatestNews from '../../components/LatestNews/LatestNews'
 const Main = () => {
 	const { filters, changeFilter } = useFilters({
 		keywords: '',
