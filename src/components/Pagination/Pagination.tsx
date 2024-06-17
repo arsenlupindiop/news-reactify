@@ -1,6 +1,7 @@
+import { IPaginationProps } from "../../interfaces"
 import styles from "./styles.module.css"
 
-const Pagination = ({ totalPages, handleNextPage, handlePreviousPage, currentPage, handlePageClick }) => {
+const Pagination = ({ totalPages, handleNextPage, handlePreviousPage, currentPage, handlePageClick }: IPaginationProps) => {
 	return (
 		<div className={styles.pagination}>
 			<button disabled={currentPage === 1} onClick={handlePreviousPage} className={styles.arrow}>

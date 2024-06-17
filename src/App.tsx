@@ -1,4 +1,4 @@
-import Header from "./components/Header/Header"
+import Header from "./components/Header/Header.tsx"
 import Main from "./pages/Main/Main.tsx"
 
 function App() {
