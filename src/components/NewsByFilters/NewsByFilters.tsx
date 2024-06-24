@@ -8,7 +8,7 @@ import NewsFilters from "../NewsFilters/NewsFilters"
 import NewsList from "../NewsList/NewsList"
 import PaginationWrapper from "../PaginationWrapper/PaginationWrapper"
 import styles from "./styles.module.css"
-
+import { useTheme } from "../../context/ThemeContext"
 
 const NewsByFilters = () => {
 	const { filters, changeFilter } = useFilters({
