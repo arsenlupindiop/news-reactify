@@ -1,7 +1,6 @@
 import styles from './styles.module.css'
 import NewsByFilters from '../../components/NewsByFilters/NewsByFilters.tsx'
 import LatestNews from '../../components/LatestNews/LatestNews.tsx'
-import { useTheme } from '../../context/ThemeContext.tsx'
 
 const Main = () => {
 	return (
