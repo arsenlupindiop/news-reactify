@@ -8,15 +8,15 @@ import styles from "./styles.module.css"
 
 interface Props {
   filters: IFilters,
-  changeFilter: (key: string, value: string | null | number) => void
+  changeFilter: (key: string, value: string | null | number) => void,
 }
 
-const NewsFilters = ({filters, changeFilter} : Props) => {
+const NewsFilters = ({filters, changeFilter, }: Props) => {
 	const { data: dataCategories } = useFetch<CategoriesApiResponse, null>(getCategories)
 	return (
 		<div className={styles.filters}>
 			{dataCategories ? (
-				<Slider>
+				<Slider >
 					<Categories
 						categories={dataCategories.categories}
 						setSelectedCategory={category => changeFilter('category', category)}
